@@ -1,5 +1,7 @@
 <?php 
 
+use Controller\Main\mainController;
+
 class defaultController extends mainController{
 
     public function index(){

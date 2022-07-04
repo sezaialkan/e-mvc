@@ -1,5 +1,7 @@
 <?php 
 
+namespace System\Route;
+
 class Route{
 
     protected $royalPath;

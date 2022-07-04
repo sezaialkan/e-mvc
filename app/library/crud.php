@@ -1,5 +1,10 @@
 <?php
 
+namespace Library\Crud;
+
+use PDO;
+use Exception;
+
 session_start();
 
 class crud{
