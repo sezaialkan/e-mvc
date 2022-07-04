@@ -16,8 +16,16 @@ class mainController{
         }else{
             echo "View not found";
         }
-       
 
+    }
+
+    public static function page($method, $data=null){
+
+        if(file_exists($selectFile = PATH_APP."/view/{$method}View.php")){
+            require_once $selectFile;
+        }else{
+            echo "View not found";
+        }
 
     }
 
