@@ -1,5 +1,7 @@
 <?php 
 
+use System\Route\Route;
+
 /* System Settings */
 require_once '../config.php';
 
