@@ -5,7 +5,7 @@ use Controller\Main\mainController;
 class defaultController extends mainController{
 
     public function index(){
-        $this->view("default");
+        $this->page("default");
     }
 
     public function attempt(){

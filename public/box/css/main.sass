@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,600;0,700;1,700&family=Ms+Madi&display=swap')
+$e-color : orange    
+$e-color-two : #212529
+$e-font : 'Josefin Sans', sans-serif
+@mixin shadow()
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)
+@mixin brain()
+    width: 50%
+    height: 100%
+    text-align: center
+    display: table-cell
+    vertical-align: middle
+html, body
+    height: 100%
+    width: 100%
+    margin: 0
+    padding: 0
+    font-family: $e-font
+    color: $e-color-two
+hr
+    width: 50%    
+    margin: 50px auto
+    border-color: $e-color-two
+.container
+    width: 100%
+    height: 100%
+    display: table
+    .left-brain
+        background: $e-color
+        @include brain()
+        @include shadow()
+        h1
+            margin: 0
+            font-size: 7rem
+            line-height: .5
+            &::first-letter
+                font-size: 16rem
+                vertical-align: sub
+        h2
+            letter-spacing: 15px     
+    .right-brain
+        @include brain()
+        p
+            font-size: 1.4rem  
+            font-weight: 400   
+            width: 80% 
+            margin: 0 auto
+        a
+            text-decoration: none
+            border-radius: 10px
+            padding: 15px 30px
+            font-size: 1.7rem
+            background: $e-color
+            color: $e-color-two
+            display: inline-block
+            margin-top: 30px
+            font-weight: 600
+            transition: all .2s
+            @include shadow()
+            &:hover
+                transform: translateY(-5px) 
